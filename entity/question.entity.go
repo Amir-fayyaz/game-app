@@ -6,5 +6,5 @@ type QuestionEntity struct {
 	PossibleAnswers []string
 	CorrectAnswer   string
 	Difficulty      string
-	Categry         string
+	CategryId       uint
 }
