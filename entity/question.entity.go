@@ -1,10 +1,14 @@
 package entity
 
+import (
+	types "main/types"
+)
+
 type QuestionEntity struct {
 	Id              uint
-	Question        string
-	PossibleAnswers []string
-	CorrectAnswer   string
-	Difficulty      string
+	Text            string
+	PossibleAnswers []PossibleAnswerEntity
+	CorrectAnswerId uint
+	Difficulty      types.QuestionDifficulty
 	CategryId       uint
 }
