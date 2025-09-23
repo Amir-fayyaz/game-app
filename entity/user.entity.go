@@ -1,8 +1,7 @@
 package entity
 
 type UserEntity struct {
-	Id       uint
-	Phone    string
-	Password string
-	Avatar   string
+	Id    uint
+	Phone string
+	Name  string
 }
