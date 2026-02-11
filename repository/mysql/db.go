@@ -3,6 +3,7 @@ package mysql
 import (
 	"database/sql"
 	"fmt"
+	"main/entity"
 	"time"
 
 	_ "github.com/go-sql-driver/mysql"
@@ -13,14 +14,14 @@ type MySqlDB struct {
 }
 
 // // IsUniquePhoneNumber implements services.Repository.
-// func (d *MySqlDB) IsUniquePhoneNumber(phone string) (bool, error) {
-// 	panic("unimplemented")
-// }
+func (d *MySqlDB) IsUniquePhoneNumber(phone string) (bool, error) {
+	panic("unimplemented")
+}
 
 // // RegisterUser implements services.Repository.
-// func (d *MySqlDB) RegisterUser(user entity.UserEntity) (entity.UserEntity, error) {
-// 	panic("unimplemented")
-// }
+func (d *MySqlDB) RegisterUser(user entity.UserEntity) (entity.UserEntity, error) {
+	panic("unimplemented")
+}
 
 func New() *MySqlDB {
 	db, err := sql.Open("mysql", "gameApp:GameAppRootPass@(localhost:3306)/gameApp")
