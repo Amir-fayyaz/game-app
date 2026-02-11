@@ -10,6 +10,10 @@ type UserService struct {
 	Repo Repository
 }
 
+func New(repo Repository) UserService {
+	return UserService{repo}
+}
+
 type Repository interface {
 	IsUniquePhoneNumber(phone string) (bool, error)
 	RegisterUser(user entity.UserEntity) (entity.UserEntity, error)

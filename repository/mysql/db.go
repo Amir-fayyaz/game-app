@@ -12,6 +12,16 @@ type MySqlDB struct {
 	db *sql.DB
 }
 
+// // IsUniquePhoneNumber implements services.Repository.
+// func (d *MySqlDB) IsUniquePhoneNumber(phone string) (bool, error) {
+// 	panic("unimplemented")
+// }
+
+// // RegisterUser implements services.Repository.
+// func (d *MySqlDB) RegisterUser(user entity.UserEntity) (entity.UserEntity, error) {
+// 	panic("unimplemented")
+// }
+
 func New() *MySqlDB {
 	db, err := sql.Open("mysql", "gameApp:GameAppRootPass@(localhost:3306)/gameApp")
 
