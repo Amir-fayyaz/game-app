@@ -49,7 +49,7 @@ func (us UserService) Register(req RegisterRequest) (RegisterResponse, error) {
 	newUser := entity.UserEntity{
 		Id:    0,
 		Phone: req.Phone,
-		Name:  req.Phone,
+		Name:  req.Name,
 	}
 
 	createdUser, err := us.Repo.RegisterUser(newUser)
